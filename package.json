@@ -1,6 +1,6 @@
 {
   "name": "stream2asynciter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create async iterator from regular stream",
   "main": "index.js",
   "scripts": {

@@ -14,7 +14,11 @@ module.exports = function(stream) {
 				destroy: (err, cb) => {
 					this.off('line', lineListener);
 					this.off('close', closeListener);
-					this.close();
+
+					if (this.close) {
+						this.close();
+					}
+
 					cb(err);
 				}
 			});
