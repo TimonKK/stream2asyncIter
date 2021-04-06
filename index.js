@@ -19,6 +19,8 @@ module.exports = function(stream) {
 						this.close();
 					}
 
+					stream.destroy()
+
 					cb(err);
 				}
 			});
